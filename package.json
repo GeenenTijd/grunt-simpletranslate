@@ -1,0 +1,38 @@
+{
+    "name": "grunt-simpletranslate",
+    "version": "0.0.1",
+    "description": "Extract translation strings and compile json translations.",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/GeenenTijd/grunt-tinyimg.git"
+    },
+    "author": {
+        "name": "Glenn Geenen",
+        "email": "glenn@geenentijd.be",
+        "web": "http://geenentijd.be"
+    },
+    "license": {
+        "type": "MIT"
+    },
+    "engines": {
+        "node": ">=0.10.0"
+    },
+    "bugs": {
+        "url": "https://github.com/GeenenTijd/grunt-tinyimg/issues"
+    },
+    "homepage": "https://github.com/GeenenTijd/grunt-tinyimg",
+    "dependencies": {
+        "async": "*"
+    },
+    "devDependencies": {
+        "grunt": "*",
+        "grunt-contrib-jshint": "*"
+    },
+    "keywords": [
+        "translate",
+        "extract",
+        "json",
+        "simple",
+        "html",
+        "gruntplugin"]
+}
