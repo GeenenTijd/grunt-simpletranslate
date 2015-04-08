@@ -4,7 +4,7 @@
     "description": "Extract translation strings and compile json translations.",
     "repository": {
         "type": "git",
-        "url": "git://github.com/GeenenTijd/grunt-tinyimg.git"
+        "url": "git@github.com:GeenenTijd/grunt-simpletranslate.git"
     },
     "author": {
         "name": "Glenn Geenen",
@@ -18,9 +18,9 @@
         "node": ">=0.10.0"
     },
     "bugs": {
-        "url": "https://github.com/GeenenTijd/grunt-tinyimg/issues"
+        "url": "https://github.com/GeenenTijd/grunt-simpletranslate/issues"
     },
-    "homepage": "https://github.com/GeenenTijd/grunt-tinyimg",
+    "homepage": "https://github.com/GeenenTijd/grunt-simpletranslate",
     "dependencies": {
         "async": "*"
     },
