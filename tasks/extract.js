@@ -15,15 +15,18 @@ module.exports = function (grunt) {
         }
 
         var results = data.match(/__\(\'.*?\'\)/g);
-        var substring;
 
-        results.forEach(function (str) {
-            substring = str.substring(4, str.length - 2);
+        if (results) {
+            var substring;
 
-            if (!keys.hasOwnProperty(substring)) {
-                keys[substring] = substring;
-            }
-        });
+            results.forEach(function (str) {
+                substring = str.substring(4, str.length - 2);
+
+                if (!keys.hasOwnProperty(substring)) {
+                    keys[substring] = substring;
+                }
+            });
+        }
 
         return keys;
     }
