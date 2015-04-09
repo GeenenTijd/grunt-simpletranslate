@@ -1,6 +1,6 @@
 {
     "name": "grunt-simpletranslate",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Extract translation strings and compile json translations.",
     "repository": {
         "type": "git",
