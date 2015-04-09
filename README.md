@@ -6,8 +6,9 @@ No PHP or Nodejs, just a HTML file where you mark the strings to translate.
 
 The simpleextract task will extract all strings into a json file.
 
-The simplecompile task will create all the translated HTML pages.
+The simplecompile task will generated all the translated HTML pages with the name page-language. So contact.html for the language 'en' becomes contact-en.html.
 
+Everything between __('') is put in json. __lang becomes -language, this is usefull for links.
 
 ## Install
 

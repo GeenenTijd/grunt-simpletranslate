@@ -56,7 +56,10 @@ module.exports = function (grunt) {
                         json = JSON.parse(js.toString());
 
                         p = getDest(dest, lang);
-                        grunt.file.write(p, replaceText(data, json));
+
+                        var result = replaceText(data, json);
+                        result = result.replace(/__lang/g, '-' + lang);
+                        grunt.file.write(p, result);
                         cb();
 
                     });
@@ -64,7 +67,8 @@ module.exports = function (grunt) {
                 } else {
                     grunt.log.warn('\nSource file "' + p + '.json" not found.');
                     var result = replaceText(data, json);
-                    grunt.file.write(getDest(dest, lang), replaceText(data, result));
+                    result = result.replace(/__lang/g, '-' + lang);
+                    grunt.file.write(getDest(dest, lang), result);
                     cb();
                 }
             }, callback);
