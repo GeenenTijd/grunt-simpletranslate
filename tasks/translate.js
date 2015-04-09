@@ -43,7 +43,7 @@ module.exports = function (grunt) {
 
             async.each(languages, function (lang, cb) {
 
-                var p = 'locales/' + lang + '/' + path.basename(src, path.extname(src)) + '.json';
+                var p = 'locales/' + lang + '/' + path.dirname(src) + '/' + path.basename(src, path.extname(src)) + '.json';
 
                 var json = {};
 
